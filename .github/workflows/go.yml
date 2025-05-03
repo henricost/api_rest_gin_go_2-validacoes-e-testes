@@ -29,7 +29,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
           version: v1.59
-          args: controllers/ database/ models/ routes/
+          args: routes/ database/ models/ controllers/
       
     - name: Test
       run: go test -v main_test.go
